@@ -8,10 +8,10 @@ public class User {
     private String id;
     private EmergencyContact emergencyContact;
 
-    public User(String name, String Uuid, String emergencyContactName, String emergencyContactNumber) {
+    public User(String name, String Uuid, String emergencyContactName, String emergencyContactNumber,String emergencyContactEmail) {
         this.name = name;
         this.id = Uuid;
-        this.emergencyContact = new EmergencyContact(emergencyContactName, emergencyContactNumber);
+        this.emergencyContact = new EmergencyContact(emergencyContactName, emergencyContactNumber,emergencyContactEmail);
     }
 
     public String getName() {
@@ -28,20 +28,25 @@ public class User {
 
 
     private class EmergencyContact {
-        EmergencyContact(String name, String number) {
+        EmergencyContact(String name, String number, String email) {
             this.name = name;
             this.number = number;
+            this.email = email;
         }
 
         String name;
         String number;
-
+        String email;
         public String getName() {
             return name;
         }
 
         public String getNumber() {
             return number;
+        }
+
+        public String getEmail() {
+            return email;
         }
     }
 

@@ -11,6 +11,7 @@
     <string name="your_name">Your Name:</string>
     <string name="em_contact_name">Emergency Contact Name:</string>
     <string name="em_contact_number">Emergency Contact Number:</string>
+    <string name="em_contact_email">Emergency Contact Email:</string>
     <string name="title_activity_signup">SignupActivity</string>
     <string name="title_activity_android_user_input_dialog">AndroidUserInputDialog</string>
 </resources>

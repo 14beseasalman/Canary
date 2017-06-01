@@ -32,8 +32,13 @@ public class SignupActivity extends Activity implements View.OnClickListener {
     @BindView(R.id.em_contact_number)
     EditText emContactNumber;
 
+    @BindView(R.id.em_contact_email)
+    EditText emContactEmail;
+
     @BindView(R.id.select_contact_btn)
     Button selectContactBtn;
+
+
 
     @BindView(R.id.submit_btn)
     Button submitBtn;
@@ -111,13 +116,16 @@ public class SignupActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.em_contact_name_txt).setVisibility(View.VISIBLE);
         emContactNumber.setVisibility(View.VISIBLE);
         findViewById(R.id.em_contact_number_txt).setVisibility(View.VISIBLE);
+        emContactEmail.setVisibility(View.VISIBLE);
+        findViewById(R.id.em_contact_email_txt).setVisibility(View.VISIBLE);
     }
 
     User getUser() {
         return new User(yourName.getText().toString(),
                         Uuid.getUUID(this),
                         emContactName.getText().toString(),
-                        emContactNumber.getText().toString()
+                        emContactNumber.getText().toString(),
+                        emContactEmail.getText().toString()
         );
     }
 

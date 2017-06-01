@@ -18,8 +18,9 @@ public class NetworkRequest extends StringRequest {
     private String action;
 
     private String uuid;
-    //final String SERVER_ENDPOINT = "https://canary-asaddev.rhcloud.com/canary.php";
-    static public final String SERVER_ENDPOINT = "http://httpbin.org/post";
+    //static final String SERVER_ENDPOINT = "https://canary-asaddev.rhcloud.com/canary.php";
+    //static final String SERVER_ENDPOINT = "http://192.168.1.5/a.php";
+    static final String SERVER_ENDPOINT = "http://httpbin.org/post";
     public NetworkRequest(Response.Listener<String> listener, String action, String uuid) {
         super(Request.Method.POST,SERVER_ENDPOINT, listener, new NetworkErrorListener());
         this.action = action;

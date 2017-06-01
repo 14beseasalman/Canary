@@ -12,6 +12,8 @@ public class Uuid {
     static public final String CANARY_PREFS = "CANARY_PREFS";
 
     static public String getUUID(Context ctxt) {
+        if(ctxt==null)
+            return "0";
         SharedPreferences preferences = ctxt.getSharedPreferences(CANARY_PREFS, MODE_PRIVATE);
 
         if (!preferences.contains("uuid")) {

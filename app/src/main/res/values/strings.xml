@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Canary</string>
+
+    <string name="title_activity_dailoggy">Dailoggy</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_dialoggyy">Dialoggyy</string>
+    <string name="title_activity_keep_alive_dialog">KeepAliveDialog</string>
+    <string name="start_service">Start Canary Service?</string>
+    <string name="stop_service">Stop Canary Service?</string>
+    <string name="your_name">Your Name:</string>
+    <string name="em_contact_name">Emergency Contact Name:</string>
+    <string name="em_contact_number">Emergency Contact Number:</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_android_user_input_dialog">AndroidUserInputDialog</string>
+</resources>

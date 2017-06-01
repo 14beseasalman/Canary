@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.asad.canary.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="50sp"
+    android:textAlignment="center"
+    android:paddingTop="20dp"
+    android:textStyle="bold"
+    android:text="Sign Up"/>
+    <RelativeLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_name"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/your_name"
+            android:layout_width="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/box1"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/select_contact_btn"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Choose Emergency Contact"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/box2"
+        >
+
+        <TextView
+            android:id="@+id/em_contact_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@string/em_contact_name" />
+
+        <EditText
+            android:id="@+id/em_contact_name"
+            android:layout_width="180dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/box3"
+        >
+
+        <TextView
+            android:id="@+id/em_contact_number_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:text="@string/em_contact_number" />
+
+        <EditText
+            android:id="@+id/em_contact_number"
+            android:layout_width="180dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:layout_below="@+id/box4">
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+</RelativeLayout>
+</RelativeLayout>
